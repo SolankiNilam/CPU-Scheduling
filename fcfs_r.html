@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCFS Scheduling Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info h2 {
+    color: #4caf50;
+}
+
+.info p {
+    line-height: 1.6;
+}
+
+.info ul {
+    margin-top: 10px;
+}
+
+.info ul li {
+    margin-bottom: 5px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <h1>FCFS Scheduling Algorithm</h1>
+    
+    <div class="info">
+        <h2>FCFS (First-Come, First-Served) Scheduling Algorithm</h2>
+        <p>
+            FCFS is the simplest type of scheduling algorithm in which processes are executed based on their arrival time. 
+            The process that arrives first is executed first, followed by the next process in the queue. 
+            It operates on a non-preemptive basis, meaning once a process starts executing, it continues until it completes.
+        </p>
+        
+        <h3>Characteristics of FCFS:</h3>
+        <ul>
+            <li>Non-preemptive: Once a process starts executing, it runs to completion.</li>
+            <li>Simple to implement.</li>
+            <li>May lead to the "convoy effect" where short processes get stuck behind long processes.</li>
+            <li>Does not consider the burst time of processes for scheduling.</li>
+        </ul>
+        
+        <h3>Advantages:</h3>
+        <ul>
+            <li>Easy to understand and implement.</li>
+            <li>No starvation: Every process gets a chance to execute eventually.</li>
+        </ul>
+        
+        <h3>Disadvantages:</h3>
+        <ul>
+            <li>Not suitable for environments where short processes need quick execution.</li>
+            <li>May result in poor average turnaround time, especially with varying burst times.</li>
+        </ul>
+        
+        
+        
+        
+    </div>
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

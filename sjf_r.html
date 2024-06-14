@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortest Job First (SJF) Scheduling Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #4caf50;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Shortest Job First (SJF) Scheduling Algorithm</h1>
+        </header>
+        
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>
+                Shortest Job First (SJF) is a scheduling algorithm that selects the waiting process with the smallest execution time to execute next. It belongs to the family of non-preemptive scheduling algorithms where once a process starts executing, it runs to completion.
+            </p>
+        </section>
+        
+        <section id="types">
+            <h2>Types of SJF</h2>
+            <ul>
+                <li><strong>Non-Preemptive SJF:</strong> Once a process starts executing, it continues until it finishes. The scheduler selects the process with the shortest burst time from the ready queue.</li>
+                <li><strong>Preemptive SJF:</strong> Also known as Shortest Remaining Time First (SRTF), this variant allows the currently running process to be preempted if a new process with a shorter burst time enters the ready queue.</li>
+            </ul>
+        </section>
+        
+        <section id="advantages">
+            <h2>Advantages</h2>
+            <ul>
+                <li>Minimizes average waiting time for processes.</li>
+                <li>Works well for both long and short processes, leading to optimal average turnaround time.</li>
+            </ul>
+        </section>
+        
+        <section id="disadvantages">
+            <h2>Disadvantages</h2>
+            <ul>
+                <li>Requires knowledge of process burst times in advance, which is not always feasible in practical scenarios.</li>
+                <li>Can suffer from starvation for longer processes if shorter processes continually arrive.</li>
+            </ul>
+        </section>
+        
+      
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority Scheduling Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #4caf50;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Priority Scheduling Algorithm</h1>
+        </header>
+        
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>
+                Priority Scheduling is a scheduling algorithm that selects processes for execution based on their priority. Each process is assigned a priority, and the scheduler selects the process with the highest priority for execution. In case of ties, other scheduling algorithms like FCFS (First Come, First Served) or Round Robin can be used to break the tie.
+            </p>
+        </section>
+        
+        <section id="types">
+            <h2>Types of Priority Scheduling</h2>
+            <p>
+                There are two types of Priority Scheduling:
+            </p>
+            <ul>
+                <li><strong>Static Priority:</strong> Priorities are assigned to processes and do not change during execution.</li>
+                <li><strong>Dynamic Priority:</strong> Priorities may change during execution based on factors such as aging (increasing the priority of waiting processes).</li>
+            </ul>
+        </section>
+        
+        <section id="operation">
+            <h2>Operation</h2>
+            <p>
+                In Priority Scheduling:
+            </p>
+            <ul>
+                <li>Each process is assigned a priority value, which can be predefined or dynamically adjusted.</li>
+                <li>The scheduler selects the process with the highest priority from the ready queue for execution.</li>
+                <li>If two or more processes have the same priority, tie-breaking mechanisms like FCFS or Round Robin may be used.</li>
+                <li>Priority values may change over time based on various factors, ensuring that higher priority processes are executed sooner.</li>
+            </ul>
+        </section>
+        
+        <section id="advantages">
+            <h2>Advantages</h2>
+            <ul>
+                <li>Provides a mechanism to prioritize important tasks or processes.</li>
+                <li>Can optimize system performance by ensuring critical tasks are executed promptly.</li>
+                <li>Allows for flexibility in managing process priorities based on system requirements.</li>
+            </ul>
+        </section>
+        
+        <section id="disadvantages">
+            <h2>Disadvantages</h2>
+            <ul>
+                <li>May suffer from starvation if lower priority processes are continually preempted by higher priority ones.</li>
+                <li>Requires a reliable method to assign and manage priorities effectively.</li>
+                <li>Complexity in implementation compared to simpler scheduling algorithms like FCFS.</li>
+            </ul>
+        </section>
+        
+        
+    </div>
+</body>
+</html>

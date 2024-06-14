@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round Robin Scheduling Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #4caf50;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Round Robin Scheduling Algorithm</h1>
+        </header>
+        
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>
+                Round Robin is a scheduling algorithm that assigns a fixed time unit per process, known as time quantum or time slice. It is designed to address the problem of starvation in FCFS scheduling by allowing each process to execute for a small amount of time consecutively.
+            </p>
+        </section>
+        
+        <section id="operation">
+            <h2>Operation</h2>
+            <p>
+                In Round Robin scheduling:
+            </p>
+            <ul>
+                <li>Each process is assigned a fixed time quantum.</li>
+                <li>Processes are executed in a circular order.</li>
+                <li>If a process does not complete within its time quantum, it is preempted and put back in the ready queue.</li>
+                <li>The scheduler then moves to the next process in the queue.</li>
+                <li>This continues until all processes are completed.</li>
+            </ul>
+        </section>
+        
+        <section id="advantages">
+            <h2>Advantages</h2>
+            <ul>
+                <li>Fairness: Ensures each process gets a fair share of CPU time.</li>
+                <li>Low waiting time for short processes compared to FCFS.</li>
+                <li>Suitable for time-sharing systems.</li>
+            </ul>
+        </section>
+        
+        <section id="disadvantages">
+            <h2>Disadvantages</h2>
+            <ul>
+                <li>High overhead: Context switching between processes occurs frequently.</li>
+                <li>Performance depends heavily on the size of the time quantum.</li>
+                <li>Not optimal for long-running processes.</li>
+            </ul>
+        </section>
+        
+      
+    </div>
+</body>
+</html>
